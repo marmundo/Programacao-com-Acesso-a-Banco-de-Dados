@@ -1,0 +1,31 @@
+###############################################
+# API Demonstração - Encontro 01
+# Arquivo de testes HTTP
+# Use a extensão REST Client do VS Code
+###############################################
+
+### Variáveis
+@baseUrl = http://localhost:3000
+
+###############################################
+# Rota Principal
+###############################################
+
+### GET / - Informações da API
+GET {{baseUrl}}/
+Content-Type: application/json
+
+###############################################
+# Rotas de Alunos
+###############################################
+
+### GET /alunos - Listar todos os alunos
+GET {{baseUrl}}/alunos
+Content-Type: application/json
+
+###############################################
+# Notas:
+# - Certifique-se de que o servidor está rodando (npm start)
+# - Instale a extensão "REST Client" no VS Code
+# - Clique em "Send Request" acima de cada requisição
+###############################################
